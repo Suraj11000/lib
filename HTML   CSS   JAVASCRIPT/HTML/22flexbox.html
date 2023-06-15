@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 345px;
+            width: 100%;
+            border: 2px solid rebeccapurple;
+            display: flex;
+
+            /* Flex property for flex conatiner */
+            /* default row */
+            flex-direction: row;
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row-reverse wrap; */
+/* 
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+/* 
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch; */
+
+
+        }
+        .item{
+            width: 200px;
+            height: 210px;
+            background-color: tomato;
+            border: 2px solid black;
+            padding: 6px;
+            margin: 6px;
+        }
+        #item-1{
+            /* flex item properties */
+            /* order: 2; */
+
+            flex-grow: 3;
+            flex-shrink: 3;
+        }
+        #item-2{
+            /* flex-grow: 5;
+            flex-shrink: 2; */
+            flex-basis: 120px;
+        }
+        #item-3{
+            flex: 2 2 344px;
+        }
+    </style>
+</head>
+<body>
+    <h3>hii welcome</h3>
+<div class="container">
+    <div class="item" id="item-1">first</div>
+    <div class="item" id="item-2">second</div>
+    <div class="item" id="item-3">third</div>
+    <!-- <div class="item" id="item-4">fourth</div>
+    <div class="item" id="item-5">fifth</div>
+    <div class="item" id="item-6">sixth</div> -->
+</div>
+</body>
+</html>

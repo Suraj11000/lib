@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wednesday</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-12/221202-Wednesday-addams-dance-al-1310-69eaeb.jpg');
+        background-repeat: no-repeat;
+        background-size: 1550px;
+    }
+
+    .left{
+        position: absolute;
+        left: 35px;
+        top: auto;
+        display: inline-block;
+    }
+
+    .left img{
+        width: 140px;
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 36%;
+        margin: auto;
+    }
+
+    .right{
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        display: inline-block;
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        color: beige;
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a{
+        color: beige;
+        display: inline-block;
+        text-decoration: none;
+        padding: 25px 25px;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0px 10px;
+        background-color: transparent;
+        color: beige;
+        padding: 5px 10px;
+        border-radius: 12px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(46, 43, 43);
+    }
+    .container{
+        border: 1px solid rgb(66, 58, 58);
+        margin: 22px 10px;
+        padding: 12px 0px;
+        width: 34%;
+        border-radius: 46px;
+    }
+    .form-group{
+        background: transparent;
+        text-align: center;
+        margin: 3px auto;
+        display: block;
+        width: 300px;
+        padding: 8px;
+        border-radius: 20px;
+        
+    }
+    .container h1{
+        /* border: 1px solid rgb(158, 127, 127); */
+        text-align: center;
+
+    }
+    .container button{
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        padding: 0px;
+        text-align: center;
+    }    
+</style>
+<body>
+    <header class="header">
+    <!-- ------------------------ left box for logo --------------------- -->
+        <div class="left">
+            <img src="https://dx35vtwkllhj9.cloudfront.net/netflix/wednesday-addams-nevermore-academy/images/share.png" alt="">
+            <div>Nevermore</div>
+        </div>
+
+<!-- ---------------------- mid box for navbar ------------------------ -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+<!-- -------------------------- right box for button ----------------------------  -->
+        <div class="right">
+            <button class="btn">Download</button>
+            <button class="btn">Join us on Telegram</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join us for more content like this</h1>
+        <form action="nevermore.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Country">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

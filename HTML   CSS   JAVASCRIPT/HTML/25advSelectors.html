@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectrs</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: bisque;
+        }
+        /* p{
+            background-color: black;
+            color: beige;
+        } */
+        /* div li p{
+            background-color: cadetblue;
+        } */
+        /* div li{
+            background-color: cadetblue;
+        } */
+        /* div ul{
+            background-color: rgb(8, 15, 1);
+            color: white;
+        } */
+        /* div > p{
+            background-color: darksalmon;
+        } */
+        div + p{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+                <p>para inside ul</p>
+            </ul>
+            <p>paragraph</p>
+        </div>
+        <p>anothewr parahg</p>
+    </div>
+    <p>otermost para</p>
+</body>
+</html>

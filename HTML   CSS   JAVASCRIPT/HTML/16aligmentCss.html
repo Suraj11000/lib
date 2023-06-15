@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .All{
+            width: 900px;
+            border: 2px solid gray;
+            margin: auto;
+
+        }
+
+        .box{
+            border: 3px solid yellow;
+            margin: 15px 25px;
+            padding: 15px 25px;
+            background-color: rgb(137, 84, 84);
+        }
+        #fruit{
+            float: left;
+            width: 38%;
+        }
+
+        #cpu{
+            float: right;
+            width: 48%;
+        }
+
+        #mobile{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        p,h3{
+            /* text-align: center; */
+            text-align: justify;
+            /* text-align: left;
+            text-align: right; */
+        }
+        p, h1{
+            margin: auto;
+            width: 500px;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="All">
+        <h3>welcome dude</h2>
+        <div id="fruit" class="box">
+            <h3>fruits</h3>
+            <p id="fp" class="fb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aut quae itaque praesentium quos perspiciatis.</p>
+        </div>
+
+        <div id="cpu" class="box">
+            <h3>Computer cpu</h3>
+            <p id="cpup" class="cpub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis amet sit quo, numquam ab consequatur incidunt voluptatem officia. Porro aspernatur facere, incidunt dolorem magnam ad labore esse eos mollitia consequatur quaerat, quasi repudiandae doloribus odit ducimus quae quas obcaecati accusamus error voluptates eaque amet vel. Minus quis totam minima distinctio.</p>
+        </div>
+
+        <div id="mobile" class="box">
+            <h3>mobile</h3>
+            <p id="mobilep" class="mobileb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aut quae itaque praesentium quos perspiciatis.</p>
+        </div>
+    </div>
+</body>
+</html>

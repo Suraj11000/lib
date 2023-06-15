@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+    <style>
+        #container{
+            border: 2px solid rebeccapurple;
+            background-color: aqua;
+            padding: 25px;
+            margin: 25px auto;
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+/* ------------------------------ Pseudo Selectors ----------------------------------- */
+        a:hover{
+            color: chartreuse;
+            background-color: cornflowerblue;
+        }
+        a:visited{
+            background-color: rgb(236, 22, 25);
+
+        }
+
+        a:active{
+            background-color: rgb(241, 197, 20);
+        }
+
+        .btn{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: darkkhaki;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+
+        .btn:hover{
+            color: brown;
+            background-color: aquamarine;
+            border: 4px solid seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate facilis est sequi assumenda cupiditate doloribus.</p>
+        <a href="https://www.amazon.in/" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

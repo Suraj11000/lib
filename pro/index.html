@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script src="/exchangeInfo.js"></script>
+</head>
+
+<body>
+    <select onchange="LoadCharts();" id="pairs">
+        <!-- <option value="BTCUSDT">BTCUSDT</option>
+        <option value="ETHUSDT">ETHUSDT</option> -->
+    </select>
+    <br>
+    <!-- tradingview widges begins -->
+    <div class="tradingview-widget-container" id="tvchart"></div>
+</body>
+<script>
+    // LoadCharts();
+    // to pass all the symbols
+    var sym = exchangeInfo.symbols, markup = '';
+    sym.forEach(d => {
+        markup += '<option value="' + d.symbol + '">' + d.symbol + '</option>';
+    });
+    document.getElementById('pairs').innerHTML = markup;
+
+    LoadCharts();
+    function LoadCharts() {
+        let symbol = document.getElementById("pairs").value;
+        // render the charts
+        new TradingView.widget(
+            {
+                "autosize": true,
+                "symbol": "BINANCE:" + symbol,
+                "interval": "15",
+                "timezone": "Etc/UTC",
+                "theme": "dark",
+                "style": "1",
+                "locale": "in",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "withdateranges": true,
+                "allow_symbol_change": true,
+                "container_id": "tvchart"
+            });
+    }
+</script>
+
+</html>

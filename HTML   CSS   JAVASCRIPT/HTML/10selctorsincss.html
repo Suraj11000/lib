@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <style>
+        p{
+            border: 2px solid blue;
+        }
+/* --------------------------------- Selection by Element ------------------------------ */
+        p{
+            color: red;
+        }
+/* ----------------------------------------- Selection by Id -------------------------------- */
+        #a{
+            color: yellow;
+            background-color: black;
+        }
+
+/* ---------------------------------------- selectors by class ---------------------------- */
+        .co{
+            color: blue;
+            background-color: rgb(34, 140, 57);
+        }
+
+/* -------------------------------------- selectors bt grouping ------------------------------ */
+        footer, span{
+            color: rgb(237, 13, 13);
+            background-color: rgb(153, 110, 51);
+        }
+    </style>
+</head>
+<body>
+    <h2>css selectors</h2>
+    <p id="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab doloribus explicabo facilis. Expedita, amet officiis.</p>
+    <p class="co">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab doloribus explicabo facilis. Expedita, amet officiis.</p>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab doloribus explicabo facilis. Expedita, amet officiis.</p>
+        <span>This is span</span>
+    </div>
+<footer>This is footer</footer>
+</body>
+</html>

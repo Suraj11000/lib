@@ -1,0 +1,20 @@
+hr {
+    border-style: dotted none none;
+    border-color: pink;
+    /* background-color: bisque; */
+    border-width: 5px;
+    height: 0px;
+    width: 20%;
+  }
+  body{
+    background-color: #ECF9FF;
+  }
+  h1{
+    /* background-color: aquamarine; */
+    color: rgb(239, 234, 93);
+  }
+
+  h3{
+    /* background-color: cyan; */
+    color: rgb(218, 83, 218);
+  }

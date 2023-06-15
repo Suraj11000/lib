@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body{
+            margin: 0px 20px;
+            padding: 20px 20px;
+            background-color: rgb(26, 28, 28);
+            color: bisque;
+        }
+        .navigation{
+            display: flex;
+        }
+        li{
+            list-style-type: none;
+            padding: 34px 40px;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        section{
+            margin: 5px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        section::before{
+            content: "contenrt";
+        }
+        section::after{
+            content: "hello";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="list">Home</li>
+                <li class="list">About</li>
+                <li class="list">Services</li>
+                <li class="list">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>welcome to the hell</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, magnam?</p>
+        </section>
+    </header>
+</body>
+</html>
