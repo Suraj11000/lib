@@ -1,0 +1,57 @@
+1800-209-0365
+
+
+1). variables declaration:
+
+let variable_name = "str";
+console.log(variable_name);
+
+ex
+let name = "suraj";
+console.log(name);
+
+
+2) constants:
+
+const name = "suraj";
+console.log(name);
+
+
+3). primitives:
+string let name = "suraj";
+numbers let age = 15;
+booleans isApproved = False;
+undefined let firstName = undefine
+null selectcolor = null;
+
+4). referance type:
+
+object let person={
+name:"ash",
+age:25;
+}
+array
+function
+
+5). Dot Notation
+
+person.name = "Marry";
+console.log(person.name);
+
+Array:
+
+let nameArray = ["suraj", "Dhiraj", 45]
+
+console.log(nameArray[2]);
+console.log(nameArray.length);
+
+6). Functions:
+
+function greet(name, surname){
+console.log("hello " + name + surname)
+}
+
+
+greet("suraj", "shinde")
+
+the quick brown fox jumps over the lazy dog
